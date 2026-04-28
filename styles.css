@@ -305,6 +305,14 @@ h3 {
   font-size: clamp(1.8rem, 3vw, 3rem);
 }
 
+.tba-card {
+  max-width: 720px;
+  min-height: 260px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
 .person-card p,
 .organizer-list p {
   margin-bottom: 0;
