@@ -208,6 +208,10 @@ h3 {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.cfp-submit {
+  margin-top: 12px;
+}
+
 .section {
   padding: clamp(64px, 9vw, 118px) clamp(20px, 6vw, 84px);
 }
@@ -311,6 +315,52 @@ h3 {
   margin: 0 auto;
   text-align: center;
   align-items: center;
+}
+
+.keynote-card {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 56px);
+}
+
+.keynote-meta {
+  padding-bottom: 28px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--line);
+}
+
+.keynote-meta h2 {
+  margin-bottom: 10px;
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
+}
+
+.keynote-content {
+  display: grid;
+  gap: 28px;
+}
+
+.keynote-content h3 {
+  color: var(--leaf);
+  font-size: 0.92rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.keynote-content p {
+  color: var(--muted);
+}
+
+.keynote-content p:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.talk-title {
+  max-width: 940px;
+  color: var(--ink);
+  font-size: clamp(1.28rem, 2vw, 1.8rem);
+  font-weight: 800;
+  line-height: 1.25;
 }
 
 .person-card p,
