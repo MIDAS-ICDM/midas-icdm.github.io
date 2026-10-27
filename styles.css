@@ -324,6 +324,10 @@ h3 {
 }
 
 .keynote-meta {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
   padding-bottom: 28px;
   margin-bottom: 30px;
   border-bottom: 1px solid var(--line);
@@ -331,7 +335,7 @@ h3 {
 
 .keynote-meta h2 {
   margin-bottom: 10px;
-  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
 }
 
 .keynote-content {
@@ -380,66 +384,51 @@ h3 {
 }
 
 .organizer-photo {
+  display: block;
   width: 100%;
-  aspect-ratio: 1;
+  height: 280px;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center 35%;
   margin-bottom: 14px;
   border-radius: 6px;
   background: #e7e2d6;
 }
 
-.program-facts {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  max-width: 1180px;
-  margin: 0 auto 28px;
-}
-
-.program-facts article {
-  padding: 18px 20px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--paper-strong);
-}
-
-.program-facts span {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--leaf);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.program-facts strong {
-  font-size: 1.05rem;
-}
-
 .program-scroll {
   max-width: 1180px;
-  margin: 0 auto 28px;
+  margin: 0 auto;
   overflow-x: auto;
 }
 
 .program-table {
   width: 100%;
-  min-width: 680px;
+  min-width: 860px;
   border-collapse: collapse;
-  overflow: hidden;
-  background: var(--paper-strong);
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  background: #fffdf7;
+  border: 1px solid #1b4332;
 }
+
+.program-table caption {
+  margin-bottom: 12px;
+  caption-side: top;
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-align: left;
+}
+
+.program-table .col-time { width: 132px; }
+.program-table .col-session { width: 168px; }
+.program-table .col-title { width: 38%; }
+.program-table .col-people { width: auto; }
 
 .program-table th,
 .program-table td {
-  padding: 16px 18px;
+  padding: 12px 14px;
   text-align: left;
   vertical-align: top;
-  border-bottom: 1px solid var(--line);
+  border: 1px solid #1b4332;
+  line-height: 1.45;
 }
 
 .program-table th {
@@ -450,8 +439,8 @@ h3 {
   text-transform: uppercase;
 }
 
-.program-table tr:last-child td {
-  border-bottom: 0;
+.program-table tbody tr:nth-child(even) td {
+  background: #f4f7f5;
 }
 
 .program-table td:first-child {
@@ -461,39 +450,17 @@ h3 {
 
 .paper-id {
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 6px;
   color: var(--leaf);
   font-weight: 800;
 }
 
-.keynote-slot {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 28px;
-  align-items: center;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 22px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--paper-strong);
-}
-
-.keynote-slot img {
-  width: 180px;
-  height: 220px;
+.speaker-photo {
+  width: 200px;
+  height: 260px;
   object-fit: cover;
-  object-position: center top;
-  border-radius: 6px;
-}
-
-.keynote-slot h2 {
-  margin-bottom: 8px;
-}
-
-.keynote-slot .talk-title {
-  margin-top: 12px;
-  margin-bottom: 0;
+  object-position: center 18%;
+  border-radius: 8px;
 }
 
 .contact-band {
@@ -544,14 +511,13 @@ h3 {
   .split,
   .cfp-section,
   .organizer-list,
-  .program-facts,
-  .keynote-slot {
+  .keynote-meta {
     grid-template-columns: 1fr;
   }
 
-  .keynote-slot img {
-    width: 160px;
-    height: 196px;
+  .speaker-photo {
+    width: 180px;
+    height: 234px;
   }
 
   .hero {
