@@ -481,6 +481,125 @@ h3 {
   color: rgba(255, 255, 255, 0.78);
 }
 
+.word-doc {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 48px 20px 72px;
+  color: #17231d;
+  font-family: Calibri, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.word-doc h1 {
+  max-width: none;
+  margin: 28px 0 10px;
+  color: #1b4332;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.word-doc h2 {
+  margin: 18px 0 8px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.word-doc p {
+  margin: 0 0 6px;
+}
+
+.word-kicker {
+  margin-bottom: 8px;
+  color: #4a554e;
+}
+
+.word-table {
+  width: 100%;
+  margin: 12px 0 8px;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.word-table th,
+.word-table td {
+  padding: 8px 10px;
+  border: 1px solid #d5ddd8;
+  text-align: left;
+  vertical-align: top;
+  font-weight: 400;
+}
+
+.word-table th {
+  color: #fff;
+  background: #1b4332;
+  font-weight: 700;
+}
+
+.word-table tbody tr:nth-child(even) td {
+  background: #f4f7f5;
+}
+
+.schedule-table td:first-child,
+.schedule-table td:nth-child(2) {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.schedule-table td:first-child {
+  width: 128px;
+}
+
+.schedule-table td:nth-child(2) {
+  width: 190px;
+}
+
+.keynote-table td,
+.organizer-table td {
+  background: #fff;
+  text-align: center;
+}
+
+.keynote-photo {
+  width: 150px;
+}
+
+.keynote-photo img,
+.organizer-table img {
+  width: 128px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.keynote-table td:last-child {
+  text-align: left;
+}
+
+.keynote-table p {
+  margin: 0 0 8px;
+}
+
+.organizer-table td {
+  width: 50%;
+  padding: 14px 12px;
+}
+
+.organizer-table strong,
+.organizer-table span {
+  display: block;
+}
+
+.organizer-table strong {
+  margin-top: 8px;
+}
+
+.organizer-table span {
+  color: #4a554e;
+  font-size: 14px;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -550,6 +669,10 @@ h3 {
 
   h1 {
     font-size: clamp(2.6rem, 15vw, 4.2rem);
+  }
+
+  .word-doc h1 {
+    font-size: 22px;
   }
 
   .topic-grid,
